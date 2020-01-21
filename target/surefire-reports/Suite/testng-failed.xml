@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Chrome Test(failed)" verbose="0">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.mytests.MyAccount_002_AddMailExtentions">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="ReportStart"/>
+          <include name="copyFile"/>
+          <include name="verify_MyAccount_002_AddMailExtentions_Test"/>
+        </methods>
+      </class> <!-- com.mytests.MyAccount_002_AddMailExtentions -->
+    </classes>
+  </test> <!-- Chrome Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
