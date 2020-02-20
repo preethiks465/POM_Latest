@@ -21,7 +21,7 @@ public class MyAccount_002_AddMailExtentions extends BaseTest {
 	List<String> ColumnDetails = new ArrayList<String>();
 	String SheetName = "MyAccountDetails";
 	String CurrentTestCase = this.getClass().getName();
-	String CurrentPackage = this.getClass().getPackageName().toString();
+	String CurrentPackage = this.getClass().getPackage().getName();
 
 	/*
 	 * List<String> TCName = new ArrayList<String>(); static int i=0;

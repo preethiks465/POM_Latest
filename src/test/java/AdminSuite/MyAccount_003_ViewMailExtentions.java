@@ -13,6 +13,7 @@ import com.mypages.AdminPage;
 import com.mypages.HomePage;
 import com.mypages.LoginPage;
 import com.mypages.MyAccountPage;
+import com.relevantcodes.extentreports.LogStatus;
 
 import BasePackage.BaseTest;
 
@@ -21,26 +22,20 @@ public class MyAccount_003_ViewMailExtentions extends BaseTest {
 	List<String> ColumnDetails = new ArrayList<String>();
 	String SheetName = "MyAccountDetails";
 	String CurrentTestCase = this.getClass().getName();
-	String CurrentPackage = this.getClass().getPackageName().toString();
+	String CurrentPackage = this.getClass().getPackage().getName();
 
-	/*
-	 * List<String> TCName = new ArrayList<String>(); static int i=0;
-	 */
 	@Test(dataProvider = "ARData")
 	public void verify_MyAccount_003_ViewMailExtentions_Test(String MailDetails) {
-		/*
-		 * TCName.add("TC Name"); Object[][] r = (page.testutil.getdata(SheetName,
-		 * CurrentTestCase, TCName, CurrentPackage)); page.test =
-		 * page.rep.startTest(r[i][0].toString());// Start this test i++;
-		 */
 		HomePage homepage = page.getInstance(LoginPage.class).doLogin(page.prop.getProperty("username"),
 				page.prop.getProperty("password"));
 		homepage.staticWait(10000);
 		AdminPage adminPage = homepage.clickOnAdminMenu();
 		MyAccountPage myAccountPage = adminPage.clickOnMyAccountLink();
 		myAccountPage.staticWait(5000);
+
 		Assert.assertTrue(page.testutil.compareTableRowValues(myAccountPage.adminMailExtenNameTable,
 				myAccountPage.adminMailExtenDescripTable, MailDetails));
+		page.test.log(LogStatus.PASS, "Actual is same as Expected");
 
 	}
 

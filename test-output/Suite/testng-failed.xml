@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="3">
+  <parameter name="browser" value="chrome"/>
   <test thread-count="5" name="Chrome Test(failed)" verbose="3">
-    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="AdminSuite.LoginTest">
+      <class name="AdminSuite.MyAccount_003_ViewMailExtentions">
         <methods>
           <include name="copyFile"/>
-          <include name="ReportStart"/>
+          <include name="ServiceStart"/>
+          <include name="verify_MyAccount_003_ViewMailExtentions_Test" invocation-numbers="1"/>
           <include name="setup"/>
-          <include name="verifyLoginTest"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- AdminSuite.LoginTest -->
+      </class> <!-- AdminSuite.MyAccount_003_ViewMailExtentions -->
     </classes>
   </test> <!-- Chrome Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

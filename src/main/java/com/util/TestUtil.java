@@ -196,8 +196,8 @@ public class TestUtil extends Page {
 
 	}
 
-	public static boolean compareTableRowValues(By Locator1,By Locator2, String data) {
-		//String object1[] = object.split("-");
+	public static boolean compareTableRowValues(By Locator1, By Locator2, String data) {
+		// String object1[] = object.split("-");
 		String data1[] = data.split("-");
 		boolean flag;
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
@@ -217,10 +217,11 @@ public class TestUtil extends Page {
 				break;
 			}
 		}
-		if (count != 0)
+		if (count != 0) {
 			flag = true;
-		else
+		} else
 			flag = false;
 		return flag;
 	}
+
 }

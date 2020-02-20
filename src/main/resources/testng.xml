@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite" verbose="3">
-
+	<parameter name="browser" value="chrome" />
 	<test thread-count="5" name="Chrome Test">
-		<parameter name="browser" value="chrome" />
 		<classes>
-			<class name="AdminSuite.MyAccount_002_AddMailExtentions" />
-			<class name="SanitySuite.Admin_MyAccount_001_AddMailExtentions" />			
+			<class name="AdminSuite.MyAccount_002_AddMailExtentions" /> 
+			<class name="SanitySuite.Admin_MyAccount_001_AddMailExtentions" />
 			<class name="AdminSuite.MyAccount_003_ViewMailExtentions" />
-			<class name="AdminSuite.LoginTest" />
-			
+			<!-- <class name="AdminSuite.LoginTest" /> -->
+
 		</classes>
 	</test> <!-- Test -->
 

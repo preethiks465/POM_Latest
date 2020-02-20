@@ -1,117 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="8" passed="5" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-01-21T09:22:55Z" name="Suite" finished-at="2020-01-21T09:25:52Z" duration-ms="176781">
+  <suite name="Suite" duration-ms="3061467" started-at="2020-01-31T08:34:27Z" finished-at="2020-01-31T09:25:29Z">
     <groups>
     </groups>
-    <test started-at="2020-01-21T09:22:55Z" name="Chrome Test" finished-at="2020-01-21T09:25:52Z" duration-ms="176781">
-      <class name="SanitySuite.Admin_MyAccount_001_AddMailExtentions">
-        <test-method is-config="true" signature="ReportStart()[pri:0, instance:SanitySuite.Admin_MyAccount_001_AddMailExtentions@ed7f8b4]" started-at="2020-01-21T09:23:38Z" name="ReportStart" finished-at="2020-01-21T09:23:40Z" duration-ms="2502" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ReportStart -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:SanitySuite.Admin_MyAccount_001_AddMailExtentions@ed7f8b4]" started-at="2020-01-21T09:23:41Z" name="setup" finished-at="2020-01-21T09:23:48Z" duration-ms="7478" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verify_Admin_MyAccount_001_AddMailExtentions_Test(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:SanitySuite.Admin_MyAccount_001_AddMailExtentions@ed7f8b4]" started-at="2020-01-21T09:23:48Z" name="verify_Admin_MyAccount_001_AddMailExtentions_Test" data-provider="ARData" finished-at="2020-01-21T09:24:18Z" duration-ms="30405" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Jan20sanitymail2.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[MailinatorSampleMail2]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Mail Extension changes have been saved successfully.]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_Admin_MyAccount_001_AddMailExtentions_Test -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:SanitySuite.Admin_MyAccount_001_AddMailExtentions@ed7f8b4]" started-at="2020-01-21T09:24:18Z" name="teardown" finished-at="2020-01-21T09:24:19Z" duration-ms="137" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- SanitySuite.Admin_MyAccount_001_AddMailExtentions -->
-      <class name="AdminSuite.MyAccount_003_ViewMailExtentions">
-        <test-method is-config="true" signature="ReportStart()[pri:0, instance:AdminSuite.MyAccount_003_ViewMailExtentions@4c309d4d]" started-at="2020-01-21T09:24:19Z" name="ReportStart" finished-at="2020-01-21T09:24:21Z" duration-ms="2589" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ReportStart -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:AdminSuite.MyAccount_003_ViewMailExtentions@4c309d4d]" started-at="2020-01-21T09:24:21Z" name="setup" finished-at="2020-01-21T09:24:29Z" duration-ms="7390" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verify_MyAccount_003_ViewMailExtentions_Test(java.lang.String)[pri:0, instance:AdminSuite.MyAccount_003_ViewMailExtentions@4c309d4d]" started-at="2020-01-21T09:24:29Z" name="verify_MyAccount_003_ViewMailExtentions_Test" data-provider="ARData" finished-at="2020-01-21T09:24:54Z" duration-ms="25504" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Jan20sanitymail1.com-MailinatorSampleMail1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_MyAccount_003_ViewMailExtentions_Test -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:AdminSuite.MyAccount_003_ViewMailExtentions@4c309d4d]" started-at="2020-01-21T09:24:54Z" name="teardown" finished-at="2020-01-21T09:24:54Z" duration-ms="140" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:AdminSuite.MyAccount_003_ViewMailExtentions@4c309d4d]" started-at="2020-01-21T09:24:54Z" name="setup" finished-at="2020-01-21T09:25:01Z" duration-ms="7107" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verify_MyAccount_003_ViewMailExtentions_Test(java.lang.String)[pri:0, instance:AdminSuite.MyAccount_003_ViewMailExtentions@4c309d4d]" started-at="2020-01-21T09:25:01Z" name="verify_MyAccount_003_ViewMailExtentions_Test" data-provider="ARData" finished-at="2020-01-21T09:25:27Z" duration-ms="25428" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Jan20sanitymail2.com-MailinatorSampleMail2]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_MyAccount_003_ViewMailExtentions_Test -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:AdminSuite.MyAccount_003_ViewMailExtentions@4c309d4d]" started-at="2020-01-21T09:25:27Z" name="teardown" finished-at="2020-01-21T09:25:27Z" duration-ms="105" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- AdminSuite.MyAccount_003_ViewMailExtentions -->
+    <test name="Chrome Test" duration-ms="3061467" started-at="2020-01-31T08:34:27Z" finished-at="2020-01-31T09:25:29Z">
       <class name="AdminSuite.LoginTest">
-        <test-method is-config="true" signature="ReportStart()[pri:0, instance:AdminSuite.LoginTest@38102d01]" started-at="2020-01-21T09:25:27Z" name="ReportStart" finished-at="2020-01-21T09:25:30Z" duration-ms="2716" status="PASS">
+        <test-method status="PASS" signature="ServiceStart(java.lang.String)[pri:0, instance:AdminSuite.LoginTest@7ed7259e]" name="ServiceStart" is-config="true" duration-ms="1747874" started-at="2020-01-31T08:34:27Z" finished-at="2020-01-31T09:03:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ReportStart -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:AdminSuite.LoginTest@38102d01]" started-at="2020-01-21T09:25:30Z" name="setup" finished-at="2020-01-21T09:25:37Z" duration-ms="7384" status="PASS">
+        </test-method> <!-- ServiceStart -->
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:AdminSuite.LoginTest@7ed7259e]" name="setup" is-config="true" duration-ms="295855" started-at="2020-01-31T09:04:11Z" finished-at="2020-01-31T09:09:07Z">
           <params>
             <param index="0">
               <value>
@@ -122,7 +29,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AdminSuite.LoginTest@38102d01]" started-at="2020-01-21T09:25:37Z" name="verifyLoginTest" data-provider="ARData" finished-at="2020-01-21T09:25:51Z" duration-ms="14116" status="PASS">
+        <test-method status="PASS" signature="verifyLoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AdminSuite.LoginTest@7ed7259e]" name="verifyLoginTest" duration-ms="668416" started-at="2020-01-31T09:09:07Z" data-provider="ARData" finished-at="2020-01-31T09:20:16Z">
           <params>
             <param index="0">
               <value>
@@ -143,57 +50,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:AdminSuite.LoginTest@38102d01]" started-at="2020-01-21T09:25:51Z" name="teardown" finished-at="2020-01-21T09:25:51Z" duration-ms="138" status="PASS">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:AdminSuite.LoginTest@7ed7259e]" name="teardown" is-config="true" duration-ms="14864" started-at="2020-01-31T09:20:16Z" finished-at="2020-01-31T09:20:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- AdminSuite.LoginTest -->
-      <class name="AdminSuite.MyAccount_002_AddMailExtentions">
-        <test-method is-config="true" signature="ReportStart()[pri:0, instance:AdminSuite.MyAccount_002_AddMailExtentions@37271612]" started-at="2020-01-21T09:22:55Z" name="ReportStart" finished-at="2020-01-21T09:22:59Z" duration-ms="3668" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ReportStart -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:AdminSuite.MyAccount_002_AddMailExtentions@37271612]" started-at="2020-01-21T09:23:00Z" name="setup" finished-at="2020-01-21T09:23:07Z" duration-ms="7691" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verify_MyAccount_002_AddMailExtentions_Test(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AdminSuite.MyAccount_002_AddMailExtentions@37271612]" started-at="2020-01-21T09:23:07Z" name="verify_MyAccount_002_AddMailExtentions_Test" data-provider="ARData" finished-at="2020-01-21T09:23:38Z" duration-ms="30514" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Jan20sanitymail1.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[MailinatorSampleMail1]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Mail Extension changes have been saved successfully.]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_MyAccount_002_AddMailExtentions_Test -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:AdminSuite.MyAccount_002_AddMailExtentions@37271612]" started-at="2020-01-21T09:23:38Z" name="teardown" finished-at="2020-01-21T09:23:38Z" duration-ms="126" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="copyFile()[pri:0, instance:AdminSuite.MyAccount_002_AddMailExtentions@37271612]" started-at="2020-01-21T09:25:51Z" name="copyFile" finished-at="2020-01-21T09:25:52Z" duration-ms="871" status="PASS">
+        <test-method status="PASS" signature="copyFile()[pri:0, instance:AdminSuite.LoginTest@7ed7259e]" name="copyFile" is-config="true" duration-ms="298279" started-at="2020-01-31T09:20:31Z" finished-at="2020-01-31T09:25:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- copyFile -->
-      </class> <!-- AdminSuite.MyAccount_002_AddMailExtentions -->
+      </class> <!-- AdminSuite.LoginTest -->
     </test> <!-- Chrome Test -->
   </suite> <!-- Suite -->
 </testng-results>

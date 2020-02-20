@@ -19,18 +19,11 @@ public class LoginTest extends BaseTest {
 	List<String> ColumnDetails = new ArrayList<String>();
 	String SheetName = "MyAccountDetails";
 	public String CurrentTestCase = this.getClass().getName();
-	String CurrentPackage = this.getClass().getPackageName().toString();
-	/*
-	 * List<String> TCName = new ArrayList<String>(); static int i = 0;
-	 */
-
+	//String CurrentPackage = this.getClass().getPackageName().toString();
+	String CurrentPackage = this.getClass().getPackage().getName();
 	@Test(dataProvider = "ARData")
 	public void verifyLoginTest(String expLoginPageTitle, String expLoginPageHeader, String expHomePageHeader) {
-		/*
-		 * TCName.add("TC Name"); Object[][] r = (page.testutil.getdata(SheetName,
-		 * CurrentTestCase, TCName, CurrentPackage)); page.test =
-		 * page.rep.startTest(r[i][0].toString());// Start this test i++;
-		 */
+
 		String LoginPageTitle = page.getInstance(LoginPage.class).getLoginPageTitle();
 		Assert.assertEquals(LoginPageTitle, expLoginPageTitle);
 		String LoginPageHeader = page.getInstance(LoginPage.class).getLoginPageHeader();
